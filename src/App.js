@@ -1,5 +1,7 @@
 import React from "react"
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DispCard from "./DispCard.js"
 
 class App extends React.Component {
 	state = {
@@ -10,8 +12,8 @@ class App extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Hello World</h1>
-				<span>This is a {this.state.event1} page</span>
+				<h1>Count It Down!</h1>
+				<DispCard />
 			</>
 		)
 	}
