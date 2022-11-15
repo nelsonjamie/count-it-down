@@ -1,7 +1,6 @@
 import React from "react"
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Card from 'react-bootstrap/Card';
+
 
 class DispCard extends React.Component {
 
@@ -9,33 +8,47 @@ class DispCard extends React.Component {
 	render() {
 		return (
 			<>
-				<Card style={{ width: '18rem' }} className="text-center">
-					<Card.Img variant='top' alt="new year" src="images/newyear.jpeg" />
-					<Card.Body>
-						<Card.Title>Coundown to 2023</Card.Title>
-						<Card.Text>
-							There are this many days left...
-						</Card.Text>
-						<Card.Text>
-							53 Days
-						</Card.Text>
-						<Card.Link href="#">Edit this Countdown</Card.Link>
-					</Card.Body>
-				</Card>
-				<br/>
-				<Card style={{ width: '18rem' }} className="text-center">
-					<Card.Img variant='top' alt="christmas" src="images/christmas.jpg" />
-					<Card.Body>
-						<Card.Title>Coundown to Christmas 2023</Card.Title>
-						<Card.Text>
-							There are this many days left...
-						</Card.Text>
-						<Card.Text>
-							411 Days
-						</Card.Text>
-						<Card.Link href="#">Edit this Countdown</Card.Link>
-					</Card.Body>
-				</Card>
+				<figure className="image-block">
+					<h1>44 days</h1>
+					<img src="https://hips.hearstapps.com/hmg-prod/images/interior-christmas-magic-glowing-tree-fireplace-royalty-free-image-1628537941.jpg" alt="" />
+					<figcaption>
+						<h3>
+							Until Christmas 2023
+						</h3>
+						<p>Will occur at our house after the guy in the big red suit visits. Presents. Brunch. Good times.</p>
+						<button>
+							Edit Info
+						</button>
+					</figcaption>
+				</figure>
+
+				<figure className="image-block">
+					<h1>51 days</h1>
+					<img src="https://d.newsweek.com/en/full/1960033/new-year-refers-december-31.jpg" alt="" />
+					<figcaption>
+						<h3>
+							Until New Year 2023
+						</h3>
+						<p>Let's celebrate the ending of 2022 and the beginning of 2023. Dancing. Drinks. Good times.</p>
+						<button>
+							Edit Info
+						</button>
+					</figcaption>
+				</figure>
+
+				<figure className="image-block">
+					<h1>112 days</h1>
+					<img src="https://hips.hearstapps.com/hmg-prod/images/birthday-cake-decorated-with-colorful-sprinkles-and-royalty-free-image-1653509348.jpg" alt="" />
+					<figcaption>
+						<h3>
+							Until Will's Birthday
+						</h3>
+						<p>The big 4-0! Let's celebrate! Good times to be had!</p>
+						<button>
+							Edit Info
+						</button>
+					</figcaption>
+				</figure>
 			</>
 		)
 	}
